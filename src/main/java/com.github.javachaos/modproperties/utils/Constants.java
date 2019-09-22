@@ -23,7 +23,7 @@ public final class Constants {
 
     /**
      * Init the constants.
-     * @param modid
+     * @param modid the id for your mod
      */
     public static void init(final String modid) {
         new Constants(modid);

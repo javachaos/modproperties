@@ -49,6 +49,7 @@ public final class PropertyManager {
 
     /**
      * Initialize the property manager.
+     * @param modid the modid for your mod
      */
     public void init(final String modid) {
         loadProperties();
