@@ -1,7 +1,20 @@
 # Mod Properties
 ## Quick Start
-
-1. Example:
+1. Import modproperties into your project using jitpack:
+```gradle
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+```gradle
+	dependencies {
+	        implementation 'com.github.javachaos:modproperties:release'
+	}
+```
+2. Example:
 
 ```java
    //Initialize the PropertyManager class.
