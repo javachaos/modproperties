@@ -4,8 +4,8 @@
 1. Example:
 
 ```java
-         //Initialize the PropertyManager class.
-	public static final PropertyManager PROPERTIES = new PropertyManager(MODID);
+   //Initialize the PropertyManager class.
+   public static final PropertyManager PROPERTIES = new PropertyManager(MODID);
    
    @Override
    public void onInitialize() {
