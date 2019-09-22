@@ -1,4 +1,6 @@
 # Mod Properties
+[![](https://jitpack.io/v/javachaos/modproperties.svg)](https://jitpack.io/#javachaos/modproperties)
+
 ## Quick Start
 1. Import modproperties into your project using jitpack:
 ```gradle
