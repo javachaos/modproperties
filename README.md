@@ -13,7 +13,7 @@
 ```
 ```gradle
 	dependencies {
-	        implementation 'com.github.javachaos:modproperties:release'
+	        implementation 'com.github.javachaos:modproperties:release1'
 	}
 ```
 2. Example:
