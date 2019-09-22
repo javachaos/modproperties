@@ -1,4 +1,4 @@
-package net.fred.modprops.utils;
+package com.github.javachaos.modproperties.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

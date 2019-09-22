@@ -1,4 +1,4 @@
-package net.fred.modprops.utils;
+package com.github.javachaos.modproperties.utils;
 
 import net.fabricmc.loader.api.FabricLoader;
 
