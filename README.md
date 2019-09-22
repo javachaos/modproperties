@@ -1,16 +1,19 @@
-# Fabric Example Mod
+# Mod Properties
+## Quick Start
 
-## Setup
-
-1. Edit build.gradle and mod.json to suit your needs.
-    * The "mixins" object can be removed from mod.json if you do not need to use mixins.
-    * Please replace all occurences of "modid" with your own mod ID - sometimes, a different string may also suffice.
-2. Run the following command:
+1. Example:
 
 ```
-./gradlew idea
+   //Initialize the PropertyManager class.
+	public static final PropertyManager PROPERTIES = new PropertyManager(MODID);
+   
+   @Override
+   public void onInitialize() {
+            //Look in MODID.properties file for property enable.xyz.biome if it does not exist default to true
+		      booleanValue = PROPERTIES.getBooleanProperty("enable.xyz.biome", true);
+            
+            //Look in MODID.properties file for property xyz.spawn.chance if the value does not exist default to 1000
+		      intValue = PROPERTIES.getIntegerProperty("xyz.spawn.chance", 1000);
+   }
+   
 ```
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
