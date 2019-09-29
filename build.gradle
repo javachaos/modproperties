@@ -15,7 +15,7 @@ dependencies {
     compile "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
-//archivesBaseName = project.archives_base_name
+archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 

@@ -19,8 +19,14 @@ public final class Constants {
    */
   public static final String GAME_DIR = FabricLoader.getInstance().getGameDirectory()
       + File.separator;
+
+  /**
+   * Number of Ticks per second in Minecraft.
+   */
   public static final int TICKS_PER_SEC = 20;
+
   private static String MODID;
+
   /**
    * Application Properties file name.
    */
@@ -72,6 +78,10 @@ public final class Constants {
     }
   }
 
+  /**
+   * Return the MODID for this current mod.
+   * @return the universally identifiable mod identifier.
+   */
   public static final String getModID() {
     return MODID;
   }
