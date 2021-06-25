@@ -2,20 +2,19 @@ import java.util.regex.Matcher
 
 plugins {
     id 'net.researchgate.release' version '2.6.0'
-    id 'fabric-loom' version '0.2.5-SNAPSHOT'
-    id 'maven-publish'
+    id 'fabric-loom' version '0.8-SNAPSHOT'
 }
-apply plugin: 'java'
-apply plugin: 'maven'
 
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 dependencies {
-    minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    mappings "net.fabricmc:yarn:${project.yarn_mappings}"
-    compile "net.fabricmc:fabric-loader:${project.loader_version}"
-    compile "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    minecraft "com.mojang:minecraft:1.17"
+    mappings "net.fabricmc:yarn:1.17+build.13:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.11.6"
+
+    //Fabric api
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.36.0+1.17"
 }
 
 archivesBaseName = project.archives_base_name
@@ -46,9 +45,7 @@ release {
     versionPatterns = [
             /(\d+)([^\d]*$)/: { Matcher m, Project p -> m.replaceAll("${(m[0][1] as int) + 1}${m[0][2]}") }
     ]
-    scmAdapters = [
-            net.researchgate.release.GitAdapter
-    ]
+    scmAdapters = [ net.researchgate.release.GitAdapter ]
 
     git {
         requireBranch = 'master'
@@ -74,20 +71,7 @@ artifacts {
     archives javadocJar
 }
 
-install {
-    repositories.mavenInstaller {
-        pom.project {
-            licenses {
-                license {
-                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    distribution 'repo'
-                }
-            }
-        }
-    }
-}
-
 wrapper {
-    gradleVersion = "5.5.1"
+    gradleVersion = "7.0.2"
     distributionType = Wrapper.DistributionType.ALL
 }

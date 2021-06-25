@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modproperties.iml" filepath="$PROJECT_DIR$/.idea/modproperties.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/modproperties.main.iml" filepath="$PROJECT_DIR$/.idea/modules/modproperties.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/modproperties.test.iml" filepath="$PROJECT_DIR$/.idea/modules/modproperties.test.iml" />
     </modules>
