@@ -22,7 +22,7 @@
   "mixins": [
   ],
   "depends": {
-    "fabricloader": ">=0.11.6",
+    "fabric-loader": ">=0.11.6",
     "fabric": "*"
   },
   "suggests": {
