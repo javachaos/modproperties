@@ -2,7 +2,7 @@
 [![](https://jitpack.io/v/javachaos/modproperties.svg)](https://jitpack.io/#javachaos/modproperties)
 
 ## Quick Start
-1. Import modproperties into your project using jitpack:
+
 ```gradle
 	allprojects {
 		repositories {
@@ -13,7 +13,7 @@
 ```
 ```gradle
 	dependencies {
-	        implementation 'com.github.javachaos:modproperties:release1'
+	        implementation 'com.github.javachaos:modproperties:32d82147'
 	}
 ```
 2. Example:
